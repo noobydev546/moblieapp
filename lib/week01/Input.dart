@@ -10,6 +10,7 @@ class InputDemo extends StatefulWidget {
 class _InputDemoState extends State<InputDemo> {
   String message = '';
   TextEditingController tcName = TextEditingController();
+  TextEditingController tcPassword = TextEditingController();
 
   void updatemessage() {
     setState(() {
@@ -23,8 +24,36 @@ class _InputDemoState extends State<InputDemo> {
       appBar: AppBar(title: Text('Input Demo')),
       body: Column(
         children: [
-          TextField(controller: tcName),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: TextField(
+              controller: tcName,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Input your name',
+                suffixIcon: IconButton(
+                  onPressed: tcName.clear,
+                  icon: Icon(Icons.clear),
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: TextField(
+              controller: tcName,
+              decoration: InputDecoration(
+                border: OutlineInputBorder(),
+                labelText: 'Input your password',
+                suffixIcon: IconButton(
+                  onPressed: tcPassword.clear,
+                  icon: Icon(Icons.clear),
+                ),
+              ),
+            ),
+          ),
           ElevatedButton(onPressed: updatemessage, child: Text('OK')),
+          SizedBox(height: 16),
           Text(message),
         ],
       ),
