@@ -9,22 +9,18 @@ class Counter extends StatefulWidget {
 
 class _CounterState extends State<Counter> {
   //state variable
-  String message = 'Hello world';
+  int count = 0;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text('Counter app')),
-      body: Text(message),
+      body: Text('Count = $count'),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
           // debugPrint(message);
           setState(() {
-            if (message == 'Hello world') {
-              message = 'Hi';
-            } else {
-              message = 'Hello world';
-            }
+            count++;
           });
         },
         child: Text('Click'),
