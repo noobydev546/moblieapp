@@ -1,16 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:moblieapp/week01/basic.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(title: Text('My first app')),
-        body: Text('Hello world'),
-        floatingActionButton: FloatingActionButton(
-          onPressed: null,
-          child: Text('Click'),
-        ),
-      ),
-    ),
-  );
+  runApp(MaterialApp(home: Basic()));
 }
