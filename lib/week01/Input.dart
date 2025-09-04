@@ -9,10 +9,11 @@ class InputDemo extends StatefulWidget {
 
 class _InputDemoState extends State<InputDemo> {
   String message = '';
+  TextEditingController tcName = TextEditingController();
 
-  void updatemessage(String str) {
+  void updatemessage() {
     setState(() {
-      message = str;
+      message = tcName.text;
     });
   }
 
@@ -22,7 +23,8 @@ class _InputDemoState extends State<InputDemo> {
       appBar: AppBar(title: Text('Input Demo')),
       body: Column(
         children: [
-          TextField(onChanged: (String str) => updatemessage(str)),
+          TextField(controller: tcName),
+          ElevatedButton(onPressed: updatemessage, child: Text('OK')),
           Text(message),
         ],
       ),
