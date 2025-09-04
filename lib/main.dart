@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:moblieapp/week04/counter.dart';
 
 void main() {
-  runApp(MaterialApp(home: Counter()));
+  runApp(MaterialApp(home: InputDemo(), debugShowCheckedModeBanner: false));
 }
