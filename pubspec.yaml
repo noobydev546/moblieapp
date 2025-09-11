@@ -77,6 +77,10 @@ flutter:
     - family: IndieFlower
       fonts:
         - asset: fonts/IndieFlower-Regular.ttf
+
+    - family: Sevillana
+      fonts:
+        - asset: fonts/Sevillana-Regular.ttf
         
   #         style: italic
   #   - family: Trajan Pro
