@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:moblieapp/week05/container_demo.dart';
+import 'package:moblieapp/week05/assignment1.dart';
 
 void main() {
-  runApp(MaterialApp(home: ContainerDemo(), debugShowCheckedModeBanner: false));
+  runApp(MaterialApp(home: Assignment1(), debugShowCheckedModeBanner: false));
 }
