@@ -40,20 +40,16 @@ class Assignment1 extends StatelessWidget {
                   onPressed: () {
                     debugPrint('Our services button pressed');
                   },
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.red,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
+                  style: ButtonStyle(
+                    backgroundColor: WidgetStatePropertyAll(Colors.red),
+                    padding: WidgetStatePropertyAll(
+                      EdgeInsets.symmetric(horizontal: 28, vertical: 5),
                     ),
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 30,
-                      vertical: 10,
-                    ),
-                    elevation: 4,
                   ),
+
                   child: const Text(
                     'Our services',
-                    style: TextStyle(color: Colors.white, fontSize: 14),
+                    style: TextStyle(color: Colors.white, fontSize: 12),
                   ),
                 ),
               ],
