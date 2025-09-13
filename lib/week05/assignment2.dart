@@ -42,60 +42,66 @@ class _Assignment2State extends State<Assignment2> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: [
-            Row(
-              children: [
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: TextField(
-                      controller: tcNumber1,
-                      keyboardType: TextInputType.number,
-                      decoration: const InputDecoration(
-                        hintText: 'First number',
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Row(
+                children: [
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: TextField(
+                        controller: tcNumber1,
+                        keyboardType: TextInputType.number,
+                        decoration: const InputDecoration(
+                          hintText: 'First number',
+                        ),
                       ),
                     ),
                   ),
-                ),
-                const Text('+', style: TextStyle(fontWeight: FontWeight.bold)),
-                Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(16.0),
-                    child: TextField(
-                      controller: tcNumber2,
-                      keyboardType: TextInputType.number,
-                      decoration: const InputDecoration(
-                        hintText: 'Second number',
+                  const Text(
+                    '+',
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: TextField(
+                        controller: tcNumber2,
+                        keyboardType: TextInputType.number,
+                        decoration: const InputDecoration(
+                          hintText: 'Second number',
+                        ),
                       ),
                     ),
                   ),
-                ),
-              ],
-            ),
-            const SizedBox(height: 10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                FilledButton(
-                  style: FilledButton.styleFrom(backgroundColor: Colors.blue),
-                  onPressed: calculate,
-                  child: const Text('Calculate'),
-                ),
-                const SizedBox(width: 8),
-                FilledButton(
-                  style: FilledButton.styleFrom(backgroundColor: Colors.red),
-                  onPressed: clear,
-                  child: const Text('Clear'),
-                ),
-              ],
-            ),
-            const SizedBox(height: 20),
-            Text(
-              result,
-              style: const TextStyle(fontSize: 16, color: Colors.red),
-            ),
-          ],
+                ],
+              ),
+              const SizedBox(height: 10),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  FilledButton(
+                    style: FilledButton.styleFrom(backgroundColor: Colors.blue),
+                    onPressed: calculate,
+                    child: const Text('Calculate'),
+                  ),
+                  const SizedBox(width: 8),
+                  FilledButton(
+                    style: FilledButton.styleFrom(backgroundColor: Colors.red),
+                    onPressed: clear,
+                    child: const Text('Clear'),
+                  ),
+                ],
+              ),
+              const SizedBox(height: 20),
+              Text(
+                result,
+                style: const TextStyle(fontSize: 16, color: Colors.red),
+              ),
+            ],
+          ),
         ),
       ),
     );
