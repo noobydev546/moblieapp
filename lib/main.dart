@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:moblieapp/week06/timer_game.dart';
+import 'package:moblieapp/mini_project/battle_game.dart';
 
 void main() {
-  runApp(MaterialApp(home: TimerGame(), debugShowCheckedModeBanner: false));
+  runApp(MaterialApp(home: BattleGame(), debugShowCheckedModeBanner: false));
 }
