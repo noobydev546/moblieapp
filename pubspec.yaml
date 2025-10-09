@@ -64,6 +64,12 @@ flutter:
     - assets/images/clock-tower.jpg
     - assets/images/landscape.png
     - assets/images/salad.jpg
+    - assets/images/fish/anglerfish.png
+    - assets/images/fish/neon-tetra.png
+    - assets/images/fish/puffer-fish.png
+    - assets/images/fish/shark.png
+    - assets/images/fish/fisherman.png
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
