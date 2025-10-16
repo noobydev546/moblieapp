@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:moblieapp/week08/assignment3.dart';
+import 'package:moblieapp/week09/scrollview_demo.dart';
 
 void main() {
-  runApp(MaterialApp(debugShowCheckedModeBanner: false, home: Assignment3()));
+  runApp(
+    MaterialApp(debugShowCheckedModeBanner: false, home: ScrollviewDemo()),
+  );
 }
